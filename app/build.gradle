@@ -5,7 +5,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "com.easyfitness"
+        applicationId "edu.foreverfit"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 39

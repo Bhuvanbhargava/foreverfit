@@ -6,7 +6,7 @@
     <color name="graph_fill">#0f4c75</color>
     <color name="background">#FFFFFF</color>
     <color name="tableheader_background">#FFFFFF</color>
-    <color name="launcher_background">#8D8282</color>
+    <color name="launcher_background">#03A9F4</color>
     <color name="enabled_color">@color/text_color</color>
     <color name="disabled_color">#bababa</color>
 </resources>

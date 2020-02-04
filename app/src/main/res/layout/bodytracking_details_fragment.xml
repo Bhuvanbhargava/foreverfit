@@ -162,7 +162,7 @@
 
             <include layout="@layout/bodymeasure_rowheader" />
 
-            <com.easyfitness.utils.ExpandedListView
+            <edu.foreverfit.utils.ExpandedListView
                 android:id="@+id/listWeightProfil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

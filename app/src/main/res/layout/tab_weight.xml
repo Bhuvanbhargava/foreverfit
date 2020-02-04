@@ -56,7 +56,7 @@
                         android:textColor="@color/gray"
                         android:textSize="18sp" />
 
-                    <com.easyfitness.utils.EditableInputView.EditableInputViewWithDate
+                    <edu.foreverfit.utils.EditableInputView.EditableInputViewWithDate
                         android:id="@+id/weightInput"
                         android:layout_width="match_parent"
                         android:layout_height="58dp"
@@ -149,7 +149,7 @@
                         android:textColor="@color/gray"
                         android:textSize="18sp" />
 
-                    <com.easyfitness.utils.EditableInputView.EditableInputViewWithDate
+                    <edu.foreverfit.utils.EditableInputView.EditableInputViewWithDate
                         android:id="@+id/fatInput"
                         android:layout_width="match_parent"
                         android:layout_height="58dp"
@@ -234,7 +234,7 @@
                         android:textColor="@color/gray"
                         android:textSize="18sp" />
 
-                    <com.easyfitness.utils.EditableInputView.EditableInputViewWithDate
+                    <edu.foreverfit.utils.EditableInputView.EditableInputViewWithDate
                         android:id="@+id/musclesInput"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
@@ -322,7 +322,7 @@
                         android:textColor="@color/gray"
                         android:textSize="18sp" />
 
-                    <com.easyfitness.utils.EditableInputView.EditableInputViewWithDate
+                    <edu.foreverfit.utils.EditableInputView.EditableInputViewWithDate
                         android:id="@+id/waterInput"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
