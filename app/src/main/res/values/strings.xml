@@ -259,11 +259,11 @@
     <string name="fillNameField">Please enter your name, at least</string>
     <string name="introSlide1Title">Hello</string>
     <string name="size_cm">Size in cm</string>
-    <string name="size_cm_optional">"Weight in LB "</string>
+    <string name="size_cm_optional">"Target Weight (LB)"</string>
     <string name="create">Create</string>
-    <string name="birthday">Birthday</string>
-    <string name="birthday_optional">Birthday (optional)</string>
-    <string name="name_or_pseudo">Name / pseudonym</string>
+    <string name="birthday">Target Date</string>
+    <string name="birthday_optional">Target Date (optional)</string>
+    <string name="name_or_pseudo">Name</string>
     <string name="name_is_required">Name is required</string>
     <string name="create_a_profile">Create a profile</string>
     <string name="introSlide1Text">Welcome to Fast N Fitness! This application is a quick and simple way to record your workout and follow your progression and the evolution of your body.</string>
