@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="toolbar_background">#823030</color>
+    <color name="toolbar_background">#3282b8</color>
     <color name="background_odd">#616161</color>
     <color name="background_even">#C9C9C9</color>
-    <color name="graph_fill">#F50000</color>
+    <color name="graph_fill">#0f4c75</color>
     <color name="background">#FFFFFF</color>
     <color name="tableheader_background">#FFFFFF</color>
     <color name="launcher_background">#8D8282</color>

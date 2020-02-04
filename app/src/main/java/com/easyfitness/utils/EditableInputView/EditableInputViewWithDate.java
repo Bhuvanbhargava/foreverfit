@@ -58,7 +58,7 @@ public class EditableInputViewWithDate extends EditableInputView implements Date
         final TextView editDate = new TextView(getContext());
         date = DateConverter.getNewDate();
         editDate.setText(DateConverter.dateToLocalDateStr(date, getContext()));
-        editDate.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+        editDate.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
         editDate.setGravity(Gravity.CENTER);
         editDate.setOnClickListener((view) -> {
                 Calendar calendar = Calendar.getInstance();

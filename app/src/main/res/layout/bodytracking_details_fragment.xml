@@ -155,7 +155,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="@string/sizeTableLabel" />
+                android:text="@string/sizeTableLabel"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
 
             <include layout="@layout/bodymeasure_rowheader" />
 

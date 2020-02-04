@@ -62,7 +62,7 @@
 
     <!-- Profile Fragment -->
     <string name="weightMenuLabel">Weight Track</string>
-    <string name="weightLabel">Weight(kg)</string>
+    <string name="weightLabel">Weight(LB)</string>
     <string name="fatLabel">Fat(%)</string>
     <string name="bonesLabel">Bones(%)</string>
     <string name="waterLabel">Water(%)</string>
@@ -70,7 +70,7 @@
     <string name="sizeLabel">Size</string>
     <string name="measureLabel">Measure</string>
     <string name="weightTableLabel">Weight records:</string>
-    <string name="sizeTableLabel">Measures history:</string>
+    <string name="sizeTableLabel">Weight history:</string>
     <string name="createProfilTitle">Create new profile</string>
     <string name="profileSelected">Profile selected</string>
     <string name="profileDeleteImpossible">Impossible to delete current profile</string>
@@ -296,7 +296,7 @@
     <string name="profileEnterYourBirthday">Your birthday</string>
     <string name="profile_page">Profile page</string>
     <string name="ProfileLabel">Profile</string>
-    <string name="edit_value">Edit value</string>
+    <string name="edit_value">Add/Edit</string>
     <string name="obsoleteCardioTab">You can now use the Record menu for bodybuilding AND cardio. This tab will disappear in a future update.</string>
     <string name="menu_Workout">Workout</string>
     <string name="renameMachine_error_text2">ERROR: This exercise name already exists. It is not possible to merge two exercises with same name and different types.</string>
