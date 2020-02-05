@@ -31,12 +31,14 @@ import edu.foreverfit.utils.EditableInputView.EditableInputViewWithDate;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.Entry;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.onurkaganaldemir.ktoastlib.KToast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
+import edu.foreverfit.utils.ImageUtil;
 
 
 public class WeightFragment extends Fragment {
@@ -51,16 +53,25 @@ public class WeightFragment extends Fragment {
     private TextView ffmiRank = null;
     private TextView rfmText = null;
     private TextView rfmRank = null;
-
+    FloatingActionButton photoButton = null;
     private LineChart mWeightLineChart;
     private LineChart mFatLineChart;
     private LineChart mMusclesLineChart;
     private LineChart mWaterLineChart;
 
-
+    String mCurrentPhotoPath = null;
+    private ImageUtil imgUtil = null;
     private DAOWeight mWeightDb = null;
     private DAOBodyMeasure mDbBodyMeasure = null;
     private DAOProfil mDb = null;
+    private View.OnClickListener onClickWeightPhoto = v -> CreatePhotoSourceDialog();
+
+    private boolean CreatePhotoSourceDialog() {
+        if (imgUtil == null)
+            imgUtil = new ImageUtil();
+
+        return imgUtil.CreatePhotoSourceDialog(this);
+    }
     private AdapterView.OnClickListener showDetailsFragment = v -> {
         int bodyPartID = BodyPart.WEIGHT;
         switch (v.getId()) {
@@ -169,25 +180,14 @@ public class WeightFragment extends Fragment {
         Button fatDetailsButton = view.findViewById(R.id.fatDetailsButton);
         Button musclesDetailsButton = view.findViewById(R.id.musclesDetailsButton);
         Button waterDetailsButton = view.findViewById(R.id.waterDetailsButton);
-      /*  imcText = view.findViewById(R.id.imcValue);
-        imcRank = view.findViewById(R.id.imcViewText);
-        ffmiText = view.findViewById(R.id.ffmiValue);
-        ffmiRank = view.findViewById(R.id.ffmiViewText);
-        rfmText = view.findViewById(R.id.rfmValue);
-        rfmRank = view.findViewById(R.id.rfmViewText);*/
-
-      /*  ImageButton ffmiHelpButton = view.findViewById(R.id.ffmiHelp);
-        ImageButton imcHelpButton = view.findViewById(R.id.imcHelp);
-        ImageButton rfmHelpButton = view.findViewById(R.id.rfmHelp);*/
+        photoButton = view.findViewById(R.id.proCamera);
 
         /* Initialisation des evenements */
         weightEdit.setOnTextChangeListener(itemOnTextChange);
         fatEdit.setOnTextChangeListener(itemOnTextChange);
         musclesEdit.setOnTextChangeListener(itemOnTextChange);
         waterEdit.setOnTextChangeListener(itemOnTextChange);
-       /* imcHelpButton.setOnClickListener(showHelp);
-        ffmiHelpButton.setOnClickListener(showHelp);
-        rfmHelpButton.setOnClickListener(showHelp);*/
+
         weightDetailsButton.setOnClickListener(showDetailsFragment);
         fatDetailsButton.setOnClickListener(showDetailsFragment);
         musclesDetailsButton.setOnClickListener(showDetailsFragment);
@@ -208,6 +208,7 @@ public class WeightFragment extends Fragment {
         mWaterLineChart = view.findViewById(R.id.waterGraph);
         mWaterGraph = new MiniDateGraph(getContext(), mWaterLineChart, "");
 
+        photoButton.setOnClickListener(onClickWeightPhoto);
         return view;
     }
 
